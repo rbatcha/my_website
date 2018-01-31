@@ -67,3 +67,19 @@
       $('#mydiv').attr('class', 'foo');
 
       //Check your work with the Inspector!
+
+      /Added below Example 3.6...
+          //change the text color
+          $('#mydiv').css('color', 'red');
+
+          //change the text size and alignment
+          $('#mydiv').css({
+              'font-size': '2em',
+              'text-align': 'left'
+          });
+
+          //get the text color and add it as text to the div
+          var thecolor = $('#mydiv').css('color');
+          $('#mydiv').append(thecolor);
+
+          //fooled ya! thecolor is rgb(255, 0, 0), the CSS interpreter's translation of the keyword 'red'
