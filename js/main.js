@@ -5,8 +5,7 @@
     });
 
     //accessing the <div> in main.js
-    var mydiv = document.getElementById("mydiv");
-    mydiv.innerHTML = "Hello World";
+    jQuery('#mydiv').html('Hello World');
 
     //creating an HTML table using script in main.js
     //initialize function called when the script loads
