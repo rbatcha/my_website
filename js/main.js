@@ -68,7 +68,7 @@
 
       //Check your work with the Inspector!
 
-      /Added below Example 3.6...
+      //Added below Example 3.6...
           //change the text color
           $('#mydiv').css('color', 'red');
 
