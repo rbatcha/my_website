@@ -9,7 +9,6 @@
 
     //creating an HTML table using script in main.js
     //initialize function called when the script loads
-    //initialize function called when the script loads
   function initialize(){
       cities();
   };
@@ -56,3 +55,15 @@
 
   //call the initialize function when the document has loaded
   $(document).ready(initialize);
+
+  //Added at Example 3.5 line 44...
+      //get the div id
+      var theid = $('#mydiv').attr('id');
+
+      //theid is 'mydiv'; add it as text to the div
+      $('#mydiv').append(theid);
+
+      //add the class 'foo' to the div
+      $('#mydiv').attr('class', 'foo');
+
+      //Check your work with the Inspector!
