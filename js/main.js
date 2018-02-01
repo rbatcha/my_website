@@ -83,3 +83,9 @@
           $('#mydiv').append(thecolor);
 
           //fooled ya! thecolor is rgb(255, 0, 0), the CSS interpreter's translation of the keyword 'red'
+
+          //iterate over each script element and add each one's source url as text to the div
+             $('script').each(function(){
+                 var thesource = $(this).attr('src');
+                 $('#mydiv').append(thesource);
+             });
