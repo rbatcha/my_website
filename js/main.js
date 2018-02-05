@@ -89,3 +89,24 @@
                  var thesource = $(this).attr('src');
                  $('#mydiv').append(thesource);
              });
+
+             //click listener with anonymous handler function
+                 $('table').on('click', function(){
+                     alert('Madison Rocks! Go Badgers!');
+                 });
+
+                 //alias method for the click event listener
+                 $('table').click(function(){
+                     alert('Visit Superior and see the big lake!');
+                 });
+
+                 //named handler function for removable listener
+                 function clickme(){
+                     alert('Yeah Green Bay! Go Packers!');
+                 };
+
+                 //add the event listener
+                 $('table').on('click', clickme);
+
+                 //remove the event listener
+                 $('table').off('click', clickme);
