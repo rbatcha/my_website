@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+  <Schema name="MegaCities" id="MegaCities">
+    <SimpleField name="City" type="string"></SimpleField>
+    <SimpleField name="Pop_1985" type="string"></SimpleField>
+    <SimpleField name="Pop_1990" type="string"></SimpleField>
+    <SimpleField name="Pop_1995" type="string"></SimpleField>
+    <SimpleField name="Pop_2000" type="string"></SimpleField>
+    <SimpleField name="Pop_2005" type="string"></SimpleField>
+    <SimpleField name="Pop_2010" type="string"></SimpleField>
+    <SimpleField name="Pop_2015" type="string"></SimpleField>
+    <SimpleField name="latitude" type="string"></SimpleField>
+    <SimpleField name="longitude" type="string"></SimpleField>
+</Schema>
+<<Folder><name>MegaCities</name>
+    <Placemark>
+        <ExtendedData><SchemaData schemaUrl="#MegaCities">
+            <SimpleData name="City">Tokyo</SimpleData>
+            <SimpleData name="Pop_1985">30.30</SimpleData>
+            <SimpleData name="Pop_1990">32.53</SimpleData>
+            <SimpleData name="Pop_1995">33.59</SimpleData>
+            <SimpleData name="Pop_2000">34.45</SimpleData>
+            <SimpleData name="Pop_2005">35.62</SimpleData>
+            <SimpleData name="Pop_2010">36.83</SimpleData>
+            <SimpleData name="Pop_2015">38</SimpleData>
+            <SimpleData name="latitude">35.6832085</SimpleData>
+            <SimpleData name="longitude">139.8089447</SimpleData>
+        </SchemaData></ExtendedData>
+        <Point><coordinates>139.80894470000001,35.6832085</coordinates></Point>
+    </Placemark>
+    <Placemark>
+</Folder>
+</Document></kml>
