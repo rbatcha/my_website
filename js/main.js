@@ -113,14 +113,14 @@
 
  function jsAjax(){
      // Step 1: Create the request
-    var ajaxRequest = new XMLHttpRequest();
+     var ajaxRequest = new XMLHttpRequest();
 
-    //Step 2: Create an event handler to send received data to a callback function
-     ajaxRequest.onreadystatechange = function(){
-        if (ajaxRequest.readyState === 4){
-            callback(ajaxRequest.response);
-        };
-     };
+      //Step 2: Create an event handler to send received data to a callback function
+       ajaxRequest.onreadystatechange = function(){
+          if (ajaxRequest.readyState === 4){
+                callback(ajaxRequest.response);
+          };
+    };
 
     //Step 3: Open the server connection
     ajaxRequest.open('GET', 'data/MegaCities.geojson', true);
@@ -129,13 +129,13 @@
     ajaxRequest.responseType = "json";
 
     //Step 5: Send the request
-    ajaxRequest.send();
+      ajaxRequest.send();
 };
 
-//define callback function
-function callback(response){
-    //tasks using the data go here
-    console.log(response);
+  //define callback function
+  function callback(response){
+      //tasks using the data go here
+      console.log(response);
 };
 
 window.onload = jsAjax();
